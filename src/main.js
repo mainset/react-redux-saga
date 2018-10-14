@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import { Provider } from "react-redux";
 
 import reduxStore from "./redux-store";
+import routes from './routes';
 
 const MAIN = (
   <Provider store={reduxStore}>
-    <div>Hello world</div>
+    {routes}
   </Provider>
 );
 
