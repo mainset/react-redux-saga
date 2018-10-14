@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from "react-redux";
 
-// import routes from './routes';
+import reduxStore from "./redux-store";
 
 const MAIN = (
-  <div>Hello world</div>
+  <Provider store={reduxStore}>
+    <div>Hello world</div>
+  </Provider>
 );
 
 ReactDOM.render(MAIN, document.getElementById('react-ethereal-boilerplate'));
