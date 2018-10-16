@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 
-import { exampleReducer } from './store';
+import { exampleReducer } from 'store';
 
 const createGlobalReducer = () => (
   combineReducers({
