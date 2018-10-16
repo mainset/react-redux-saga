@@ -5,8 +5,7 @@ import { connect } from 'react-redux';
 import { Map } from 'immutable';
 import { Link } from 'react-router-dom';
 
-import { fetchWelcomeData } from './actions';
-import { selectWelcomeData } from './selectors';
+import { fetchWelcomeData, selectWelcomeData } from '../../store';
 
 class Example extends Component {
   componentWillMount() {
